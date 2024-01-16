@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+#header{
+    grid-area: header;
+}
+
+    .mainLogo{
+        grid-area: mainLogo;
+    }
+
+    .navMenu{
+        grid-area: navMenu;
+    }
+
+    .apmtBtn{
+        grid-area: apmtBtn;
+    }
+
+#section1{
+    grid-area: section1;
+}
+
+#section2{
+    grid-area: section2;
+}
+
+#section3{
+    grid-area: section3;
+}
+
+#section4{
+    grid-area: section4;
+}
+
+#services{
+    grid-area: services;
+}
+
+#contactForm{
+    grid-area: contactForm;
+}
+
+footer{
+    grid-area: footer;
+}
+
+#wrapper {
+   /* background-image: radial-gradient(#d8fdff,  #f1fffa); */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: .5fr 2.5fr 1.5fr 2.5fr 2fr auto 2.5fr auto;
+    grid-template-areas:"header" "section1" "section2" "section3" "section4" "services" "contactForm" "footer";
+}
+
+/* Header section */
+/* Header section */
+/* Header section */
+/* Header section */
+/* Header section */
+
+#header{
+    /*background-color: white;*/
+    background-image: radial-gradient(#affbff,  #f1fffa); 
+    height: 120px;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 100%;
+    grid-template-areas: "mainLogo navMenu apmtBtn";  
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.mainLogo {
+    height: 95%;
+    width: 95%;
+}
+
+.mainLogo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.navList, .navSublist {
+    list-style-type: none;    
+}
+
+.navList{
+    font-size: 18px;
+    color: #369CEA;
+    width: 35vw;
+    display: inline-flex;
+    justify-content: space-between;
+
+}
+
+.navSublist {
+    display: none;
+}
+
+li a { 
+    text-decoration: none;
+    color: #369CEA;
+}
+
+li:hover a {
+    color: #1576ff;
+    transition: 0.1s;
+}
+
+.btnStyle {
+    color: white;
+    font-size: 20px;
+    background-color: #369CEA;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.btnStyle:hover {
+    background-color: #1576ff;
+    transition: 0.5s;
+}
+
+/* Section 1 */
+/* Section 1 */
+/* Section 1 */
+/* Section 1 */
+/* Section 1 */
+
+p{
+    font-size: 18px;
+    line-height: 40px;
+    color: #1576ff;
+}
+
+h1, h2{
+    color: #0c60d6;
+    
+}
+
+#section1 {
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    margin-left: 14vw;
+    margin-right: 14vw;
+    column-gap: 100px;
+    align-items: center;
+}
+
+.mainArticle h1{
+    margin-bottom: 2vw;
+}
+
+.mainArticle div{
+    margin-top: 2vw;
+}
+
+.mainImage {
+    height: 100%;
+    width: 100%;
+    align-self: center;
+}
+
+.mainImage img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Section 2 */
+/* Section 2 */
+/* Section 2 */
+/* Section 2 */
+/* Section 2 */
+
+#section2{
+    /* background-color: white; */
+    background-image: radial-gradient(#affbff,  #f1fffa); 
+    height: 350px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 175px 175px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.noteImage1{
+    margin-top: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.noteImage1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.note{
+    text-align: center;
+}
+
+.note h2{
+    margin-bottom: 15px;
+}
+
+/* Section 3 */
+/* Section 3 */
+/* Section 3 */
+/* Section 3 */
+/* Section 3 */
+
+#section3 {
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    margin-left: 14vw;
+    margin-right: 14vw;
+    column-gap: 100px;
+}
+
+.line{
+    border: 2px solid #1576ff;
+    border-radius: 20px;
+    width: 100%;
+    justify-self: start;
+}
+
+.mainImage2{
+    height: 100%;
+    width: 100%;
+}
+
+.mainImage2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.mainArticle2{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr auto 2fr auto 2fr;
+    align-items: center;
+}
+
+.mainArticle2-container1 h2, .mainArticle2-container2 h2, .mainArticle2-container3 h2{
+    margin-bottom: 25px;
+}
+
+/* Section 4 */
+/* Section 4 */
+/* Section 4 */
+/* Section 4 */
+/* Section 4 */
+
+.therapyBenefits-title{
+    grid-area: benTitle;
+}
+
+.whenList-title{
+    grid-area: whenTitle;
+}
+
+.therapyBenefits-container1{
+    grid-area: benList;
+}
+
+.therapyBenefits-container2{
+    grid-area: whenList;
+}
+
+#section4{
+    margin-top: 3vw;
+    height: 570px;
+    background-image: radial-gradient(#affbff,  #f1fffa); 
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 175px 175px 220px;
+    align-items: center;
+    justify-items: center;
+}
+
+.section4-img{
+    margin-top: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.section4-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#therapyBenefits{
+    height: 220px;
+    align-self: start;
+    align-content: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "benTitle whenTitle" "benList whenList";
+    column-gap: 100px;
+}
+
+
+
+.therapyBenefits-title, .whenList-title{
+    text-align: center;
+    align-self: start;
+}
+
+.benefitsList, .whenList{
+    list-style-type: none;
+    text-align: center;
+    font-size: 18px;
+    color: #1576ff;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+/* Servicios */
+/* Servicios */
+/* Servicios */
+/* Servicios */
+/* Servicios */
+
+.servicesTitle{
+    grid-area: servicesTitle;
+    font-size: larger;
+    align-self: center;
+    font-size: 22px;
+}
+
+.service1{
+    grid-area: service1;
+}
+
+.service2{
+    grid-area: service2;
+}
+
+.service3{
+    grid-area: service3;
+}
+
+#services{
+    margin-top: 4vw;
+    /*background-image: radial-gradient(#affbff,  #f1fffa); */
+    height: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px auto;
+    grid-template-areas: ". servicesTitle ." "service1 service2 service3";
+    row-gap: 1vw;
+    align-items: center;
+    justify-items: center;
+}
+
+.serviceImg{
+    grid-area: serviceImg;
+}
+
+.serviceInfo{
+    grid-area: serviceInfo;
+}
+
+.serviceBtn{
+    grid-area: serviceBtn;
+}
+
+.serviceContainer{
+    background-image: radial-gradient(#affbff,  #f1fffa); 
+    border: solid 8px #bcfdff;
+    border-radius: 20px;
+    width: 60%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% auto 10%;
+    grid-template-areas: "serviceImg" "serviceInfo" "serviceBtn";
+    justify-content: center;
+    justify-items: center;
+    object-fit: contain;
+}
+
+.serviceImg{
+    /*border: solid 10px #affbff;*/
+    align-self: end;
+    justify-self: center;
+    height: 90%;
+    width: 90%;
+}
+
+.serviceImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.serviceBtn-style{
+    font-size: 16px;
+    padding: 10px;
+}
+
+.serviceInfo{
+    align-self: start;
+    margin-top: 20px;
+}
+
+.serviceInfo p{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #1576ff;
+    height: 100%;
+    object-fit: contain;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.serviceInfo h3{
+    color: #0c60d6;
+    text-align: center;
+}
+
+.serviceBtn{
+    align-self: start;
+    justify-self: center;
+}
+
+/* Contact form */
+/* Contact form */
+/* Contact form */
+/* Contact form */
+/* Contact form */
+
+#contactForm{
+    height: 100%;
+    border-top: solid 2px gray;
+    border-bottom: solid 2px gray;
+    margin-top: 4vw;
+    background-image: radial-gradient(#414141bd,  #414141bd), url(../Media/pexels-cottonbro-studio-4101143.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+#formSheet{
+    height: 60%;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group{
+    margin: 15px 15px 15px 15px;
+    width: 100%;
+}
+
+input, textarea{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    border-style: none;
+    color: #000000;
+    font-size: 16px;
+    padding: 5px;
+}
+
+input:hover, textarea:hover {
+    background-color: #affbff;
+}
+
+input:focus, textarea:focus{
+    outline-color: #affbff;
+    outline-offset: 5px;
+    outline-style: solid ;
+    outline-width: 3px;
+    transition: linear 0.5s;
+    background-color: white;
+}
+
+input{
+    height: 40px;
+}
+
+.contactFormTitle{
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.contactFormTitle h2{
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #affbff;
+}
+
+.contactFormTitle p{
+    color: #affbff;
+}
+
+.btnStyle-form{
+    background-color: #affbff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(97, 97, 97);
+    width: 100px;
+}
+
+.btnStyle-form:hover{
+    background-color: #0c60d6;
+    color: white;
+    transition: 0.5;
+}
+
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+
+.footerTitle{
+    grid-area: footerTitle;
+}
+
+.socialsList{
+    grid-area: socialsList;
+}
+
+.footerInfo{
+    grid-area: footerInfo;
+}
+
+footer{
+    margin-top: 7vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". footerTitle ." ". socialsList ." "footerInfo footerInfo footerInfo";
+    row-gap: 15px;
+}
+
+.footerTitle{
+    font-size: 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+.socialsList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.socials-container{
+    height: 100%;
+    width: 20%;
+}
+
+.socials-container a img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.contentSo{
+    grid-area: shoutouts;
+}
+
+.rightsClaims{
+    grid-area: rights;
+}
+
+.designedBy{
+    grid-area: designer;
+}
+
+.footerInfo{
+    margin-top: 20px;
+    background-image: radial-gradient(#affbff,  #f1fffa); 
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "shoutouts rights designer";
+    justify-items: center;
+    align-items: center;
+}
+
+.contentSo p, .designedBy p{
+    font-size: 10px;
+}
+
+.waContact{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+.waPop{
+    position: fixed;
+    bottom: 60px;
+    right: 125px;
+    text-align: justify;
+    visibility: hidden;
+    
+}
+
+.waContact:hover~.waPop{
+    visibility: visible;
+}
